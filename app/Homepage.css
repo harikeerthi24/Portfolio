@@ -103,52 +103,15 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
 
-@media screen and (max-width: 768px) {
-    .home-banner {
-      flex-direction: column; 
-      align-items: center;
-      text-align: center;
-    }
-  
-    .home-bnr-text-sec {
-      max-width: 100%;
-    }
-  
-    .home-bnr-text-sec h1 {
-      font-size: 2rem;
-    }
-  
-    .home-bnr-text-sec p {
-      font-size: 1rem;
-      margin-bottom: 15px;
-    }
-  
-    .home-contact-btn {
-      margin: 0 auto 15px;
-    }
-  
-    .home-social-links {
-      justify-content: center;
-    }
-  
-    .home-image-section {
-      margin-top: 20px; 
-    }
-  
-    .home-profile-image {
-      width: 80%; 
-      height: auto;
-    }
-  }
-
   @media screen and (max-width: 1024px) {
     .home-banner {
       flex-direction: column; 
-      align-items: center;
+      align-items: flex-start;
+      margin-left: 20px;
     }
   
     .home-bnr-text-sec h1 {
-      font-size: 2.5rem;
+      font-size: 4.5rem;
     }
   
     .home-bnr-text-sec p {
@@ -165,6 +128,47 @@
     }
   }
   
+
+@media screen and (max-width: 768px) {
+    .home-banner {
+      flex-direction: column; 
+      align-items: center;
+      /* text-align: center; */
+    }
+  
+    .home-bnr-text-sec {
+      max-width: 100%;
+    }
+  
+    .home-bnr-text-sec h1 {
+      font-size: 3.5rem;
+    }
+  
+    .home-bnr-text-sec p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      width: 90%;
+    }
+  
+    /* .home-contact-btn {
+      margin: 0 auto 15px;
+    } */
+  
+    .home-social-links {
+      justify-content: center;
+    }
+  
+    .home-image-section {
+      margin-top: 20px; 
+    }
+  
+    .home-profile-image {
+      width: 80%; 
+      height: auto;
+    }
+  }
+
+ 
   @media screen and (max-width: 480px) {
     .home-bnr-text-sec h1 {
       font-size: 2.2rem;
@@ -489,7 +493,7 @@
 
 .homeConnectForm {
   flex: 1;
-  max-width: 45%;
+  /* max-width: 45%; */
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -561,6 +565,11 @@ label {
     font-size: 0.9rem;
     padding: 10px;
   }
+  .homeConnectDetails, .homeConnectDetails  {
+    max-width: 100%;
+  }
+
+
 }
 
 @media screen and (max-width: 500px) {
@@ -578,5 +587,13 @@ label {
   .homeConnectForm > form > button {
     font-size: 0.8rem;
     padding: 8px 15px;
+  }
+
+  .homeConnectDetails p {
+    font-size: 1rem;
+  }
+
+  .homeConnect {
+    margin-top: 0px;
   }
 }

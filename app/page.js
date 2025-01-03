@@ -8,12 +8,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import work from "../Assets/work.png";
+import Navbar from "../Components/Navbar/navbar";
 
 
 function Home() {
     return (
         <>
+         <Navbar/>
             <div className="home-container">
+               
                 <div className="home-banner">
                     <div className="home-bnr-text-sec">
                         <h1>Hi, I am <br /><span>Robert Garcia</span>.</h1>
@@ -22,7 +25,7 @@ function Home() {
                             accessible and user-friendly websites.
                         </p>
                         <div className="home-bnr-buttons">
-                            <button className="home-contact-btn">Contact Me</button>
+                        <Link href="#contact-us"><button className="home-contact-btn">Contact Me</button></Link>
                             <div className="home-social-links">
                                 <Link href="#" className="home-social-icon"><LinkedInIcon /></Link>
                                 <Link href="#" className="home-social-icon"><GitHubIcon /></Link>
@@ -137,7 +140,7 @@ function Home() {
 
                 </div>
 
-                <div className="homeConnect">
+                <div className="homeConnect" id="contact-us">
                     <div className="homeConnectDetails">
                         <h1>LETS CONNECT</h1>
                         <p>

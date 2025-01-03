@@ -1,0 +1,71 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+  }
+  
+  .navLeft {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Bebas Neue;
+  }
+  
+  .burgerMenu {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .navRight {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #C7C7C7;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  @media (max-width: 768px) {
+    .burgerMenu {
+      display: block;
+    }
+  
+    .navRight {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background-color: black;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .navRight.active {
+      display: flex;
+    }
+  }
+  

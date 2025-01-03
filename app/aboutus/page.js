@@ -7,11 +7,13 @@ import Image from "next/image";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import pic from "../../Assets/image (2).png";
+import Navbar from "../../Components/Navbar/navbar";
 
 function Aboutus() {
 
     return (
         <>
+         <Navbar/>
             <div className="aboutus-container">
                 <div className="home-aboutme">
                     <div className="home-abtme-heading">
@@ -79,6 +81,47 @@ function Aboutus() {
                     </div>
 
                 </div>
+
+                <div className="homeConnect" id="contact-us">
+                    <div className="homeConnectDetails">
+                        <h1>LETS CONNECT</h1>
+                        <p>
+                            Say hello at <span className="highlight">robertgarcia@gmail.com</span>
+                        </p>
+                        <p>
+                            For more info, heres my <span className="highlight">resume</span>
+                        </p>
+                        <div className="homeConnectSocial">
+                            <Link href="#" target="_blank" rel="noopener noreferrer">
+                                <LinkedInIcon/>
+                            </Link>
+                            <Link href="#" target="_blank" rel="noopener noreferrer">
+                                <GitHubIcon/>
+                            </Link>
+                            
+                        </div>
+                    </div>
+
+                    <div className="homeConnectForm">
+                        <form action="#" method="post">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+                            <label htmlFor="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
+
+                            <label htmlFor="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+
+                </div>
+
 
             </div>
 
