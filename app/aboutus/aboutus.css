@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.aboutus-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    color: #fff; 
+    font-family: Arial, sans-serif;
+}
+
+.aboutus-pic{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-pic>img{
+    width: 90%;
+    height: auto;
+}
+
+.aboutus-skills>button{
+    padding: 10px 20px;
+    border-radius: 22px;
+    border: 1px solid #484848;
+    background-color: transparent;
+    color: white;
+}
+
+.aboutus-skills{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-skills{
+        gap: 15px;
+    }
+
+}
+
+.aboutus-role{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutus-role>p{
+    color: #C7C7C7;
+}
+
+.aboutus-role>h2>span{
+    color: #D3E97A;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .aboutus-role>h2{
+        font-size: 1rem;
+    }
+    .aboutus-role>p{
+        font-size: 0.9rem;
+    }
+}

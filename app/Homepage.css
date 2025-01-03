@@ -1,0 +1,582 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #111;
+    color: #fff; 
+    font-family: Arial, sans-serif;
+    /* padding: 0 20px; */
+  }
+  
+  .home-banner {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .home-bnr-text-sec {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .home-bnr-text-sec h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: Bebas Neue;
+  }
+  
+  .home-bnr-text-sec h1 span {
+    color: #82cd47; 
+  }
+  
+  .home-bnr-text-sec p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  /* Call-to-Action Buttons */
+  .home-bnr-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-contact-btn {
+    background-color: #D3E97A;
+    border: none;
+    color: #111;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .home-contact-btn:hover {
+    background-color: #6db03d;
+  }
+  
+  /* Social Links */
+  .home-social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .home-social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #D3E97A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .home-social-icon:hover {
+    background-color: #555;
+  }
+  
+  /* Right Image Section */
+  .home-image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .home-profile-image {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+@media screen and (max-width: 768px) {
+    .home-banner {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center;
+    }
+  
+    .home-bnr-text-sec {
+      max-width: 100%;
+    }
+  
+    .home-bnr-text-sec h1 {
+      font-size: 2rem;
+    }
+  
+    .home-bnr-text-sec p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    .home-contact-btn {
+      margin: 0 auto 15px;
+    }
+  
+    .home-social-links {
+      justify-content: center;
+    }
+  
+    .home-image-section {
+      margin-top: 20px; 
+    }
+  
+    .home-profile-image {
+      width: 80%; 
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .home-banner {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .home-bnr-text-sec h1 {
+      font-size: 2.5rem;
+    }
+  
+    .home-bnr-text-sec p {
+      font-size: 1.1rem;
+    }
+  
+    .home-profile-image {
+      width: 70%; 
+      height: auto;
+    }
+  
+    .home-contact-btn {
+      padding: 8px 16px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .home-bnr-text-sec h1 {
+      font-size: 2.2rem;
+      text-align: left;
+      padding-left: 9px;
+    }
+  
+    .home-bnr-text-sec p {
+      font-size: 0.9rem;
+      text-align: left;
+      padding-left: 9px;
+      width: 95%;
+    }
+  
+    .home-contact-btn {
+      font-size: 0.9rem;
+      padding: 8px 12px; 
+      margin: 0px 20px;
+    }
+  
+    .home-social-icon {
+      width: 35px;
+      height: 35px; 
+      font-size: 0.8rem;
+    }
+  
+    .home-profile-image {
+      width: 90%; 
+      height: auto;
+    }
+  }
+  
+
+  /* -----------------------------features----------------------------------- */
+
+  .home-features {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .home-feature-heading>h1{
+    font-family: Bebas Neue;
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 0px;
+  }
+
+  .home-feature-heading>p{
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+    color: #C7C7C7 ;
+    width: 50%;
+  }
+  
+  .home-projects{
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    padding: 10px;
+  }
+
+  .home-each-project{
+    display: flex;
+    margin: 50px 0px;
+  }
+
+  .home-prjt-img{
+    flex: 1;
+  }
+
+  .home-prjt-details{
+    flex: 1;
+  }
+
+  .home-prjt-details>h1{
+    font-weight: 500;
+  }
+
+  .home-prjt-details>p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #C7C7C7;
+  }
+
+  .home-prjt-details>h4{
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .home-prjt-role{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .role{
+    border-bottom: 1px solid #555;
+  }
+
+  .home-prjt-live{
+    display: flex;
+    gap: 20px;
+    color: #D3E97A;
+  }
+
+  .home-prjt-live>p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #D3E97A;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .home-each-project{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      /* padding: 20px; */
+    }
+
+    .home-feature-heading>p{
+      width: 90%;
+    }
+
+    .home-feature-heading{
+      padding: 10px;
+    }
+
+    .home-prjt-img>img{
+      width: 95%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .home-each-project{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      /* padding: 20px; */
+    }
+
+    .home-feature-heading>p{
+      font-size: 0.9rem;
+    }
+
+    .home-feature-heading>h1{
+      font-size: 2.5rem;
+    }
+
+    .home-prjt-details>h1{
+      font-size: 1.3rem;
+    }
+    .home-prjt-details>h4{
+      font-size: 1rem;
+    }
+
+    .home-prjt-details>p{
+      font-size: 1rem;
+      line-height: 22px;
+    }
+
+    .home-prjt-live>p{
+      font-size: 0.8rem;
+      gap: 1px;
+    }
+
+  }
+
+
+  /* ---------------------------------------aboutme-------------------------------------- */
+
+  .home-aboutme{
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 50px 0px;
+  }
+
+  .home-abtme-heading{
+    flex: 1;
+    padding: 15px;
+  }
+
+  .home-abtme-heading>h1{
+    font-family: Bebas Neue;
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  .home-abtme-content{
+    flex: 1;
+    padding: 15px;
+  }
+
+  .home-abtme-content>h1{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .home-abtme-content>p{
+    font-size: 1.09rem;
+    font-weight: 500;
+    color: #C7C7C7;
+    text-align: justify;
+  }
+
+  .home-abtme-content>a>h4{
+    color: #D3E97A;
+    border-bottom: 1px solid #D3E97A;
+    width: fit-content;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    .home-aboutme{
+      justify-content: center;
+    }
+
+    .home-abtme-content > h1 {
+      font-size: 1.4rem;
+      text-align: left;
+    }
+
+    .home-abtme-content > p {
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .home-abtme-heading>h1{
+      margin: 0px;
+      /* padding: 0px 10px; */
+      font-size: 3rem;
+    }
+
+    .home-aboutme{
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .home-abtme-content > h1 {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+
+    .home-abtme-content > p {
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  }
+
+  /* ---------------------------------------connect---------------------------------------------- */
+
+.highlight {
+  color: #d6ff42;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.homeConnect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 1px solid #222;
+  /* min-height: 100vh;  */
+  box-sizing: border-box;
+}
+
+.homeConnectDetails {
+  flex: 1;
+  max-width: 45%;
+}
+
+.homeConnectDetails h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: Bebas Neue;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.homeConnectDetails p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #C7C7C7;
+}
+
+.homeConnectSocial {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.homeConnectSocial {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  filter: invert(85%);
+  transition: filter 0.3s ease;
+}
+
+.homeConnectSocial img:hover {
+  filter: invert(100%);
+}
+
+.homeConnectForm {
+  flex: 1;
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.homeConnectForm > form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px; /* Limit the form width for better responsiveness */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 1rem;
+  color: #C7C7C7;
+}
+
+.homeConnectForm > form > input,
+.homeConnectForm > form > textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.homeConnectForm > form > textarea {
+  resize: none;
+}
+
+.homeConnectForm > form > button {
+  padding: 12px;
+  background-color: #d6ff42;
+  border: none;
+  border-radius: 22px;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center; /* Center the button */
+}
+
+.homeConnectForm > form > button:hover {
+  background-color: #c4e839;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 700px) {
+  .homeConnect{
+    flex-direction: column;
+  }
+  .homeConnectForm > form {
+    width: 90%;
+  }
+
+  .homeConnectForm > form > input,
+  .homeConnectForm > form > textarea {
+    font-size: 0.9rem;
+  }
+
+  .homeConnectForm > form > button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homeConnectForm > form {
+    width: 100%; /* Use full width on smaller screens */
+    padding: 10px;
+  }
+
+  .homeConnectForm > form > input,
+  .homeConnectForm > form > textarea {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .homeConnectForm > form > button {
+    font-size: 0.8rem;
+    padding: 8px 15px;
+  }
+}
